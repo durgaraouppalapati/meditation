@@ -9,6 +9,7 @@ function startTimer() {
   var s = checkSecond((timeArray[1] - 1));
   if(s==59){m=m-1}
   //if(m<0){alert('timer completed')}
+  if(m==-1){windowClose()}
   
   document.getElementById('timer').innerHTML =
     m + ":" + s;
@@ -20,4 +21,9 @@ function checkSecond(sec) {
   if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
   if (sec < 0) {sec = "59"};
   return sec;
+}
+
+function windowClose() {
+  window.open('','_parent','');
+  window.close();
 }
