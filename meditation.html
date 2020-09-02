@@ -20,16 +20,36 @@
               font-size:20px;
               text-align:center;
             }
+            .button-class{
+              display: flex;
+              justify-content: center;
+              margin-top: 30px;
+            }
+            .start-button{
+              border: none;
+              color: white;
+              padding: 10px 30px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 16px;
+              margin-right: 20px;
+              cursor: pointer;
+              background-color: #2F63D3;
+              border-radius: 7px;
+            }
         </style>
     </head>
   
     <body>
      
-      <h1>Remainder For Every 1 Hour Meditation</h1>
+      <h1>Start Doing Meditation</h1>
     
       <div>
          <br>
          <img src="Dhyana-focus.jpg">
+      </div>
+      <div class="button-class">
+          <input class="start-button" type="button" value="Start Timer" onclick="startTimer();">
       </div>
       <div class="timer"><br>Time left = <span id="timer"></span></div>
       <script src="script.js"></script>

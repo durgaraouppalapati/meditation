@@ -1,6 +1,6 @@
 document.getElementById('timer').innerHTML =
   003 + ":" + 00;
-startTimer();
+//startTimer();
 
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;
